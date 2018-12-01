@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Web Page</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+	<div class="top-info">
+  <div class="contact-info">
+    <div class="contact-info_item">
+      <i class="mobile" aria-hidden="true"></i>
+      <div class="contact-info_content">
+        +1 (226) 224-26-29<br>
+      </div>
+    </div>
+    <div class="contact-info_item">
+      <i class="mail" aria-hidden="true"></i>
+      <div class="contact-info_content">
+       rvan.marensch@gmail.com
+      </div>
+    </div>
+  </div>
+</div>
+
+	<div id="siteContainer">
+    	<header id="mainHeader">
+        	<div id="logo"><img src="images/logo.png"></div>
+			
+			<ul class="menu">	
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contacts.html">Contact</a></li>
+			</ul>
+        </header>
+		<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+	<label for="email">Email</label>
+    <input type="text" id="Email" name="Email" placeholder="Your email...">
+
+    <label for="Province">Province</label>
+    <select id="Province name="Province">
+      <option value="Ontario">Ontario</option>
+      <option value="Quebec">Quebec</option>
+	  <option value="Nova Scotia">Nova Scotia</option>
+	  <option value="New Brunswick">New Brunswick</option>
+	  <option value="Manitoba">Manitoba</option>
+	  <option value="British Columbia">British Columbia</option>
+	  <option value="Prince Edward Island">Prince Edward Island</option>
+	  <option value="Saskatchewan">Saskatchewan</option>
+	  <option value="Alberta">Alberta</option>
+	  <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+		
+			<div id="share-buttons">
+    		<a href="///">
+       		 <img class="a" src="images/Instagram.png" alt="Instagram" />
+   		</a>
+  		<a href="///" target="_blank">
+    		    <img class="b" src="images/Facebook.png" alt="Facebook" />
+  		 </a>
+  		<a href="///" target="_blank">
+   		     <img class="c" src="images/Google+.png" alt="Google" />
+    	    	</a>
+			</div>
+		
+        <footer id="mainFooter">
+
+
+			 <p>
+			 <small>All rights are reserved. &copy; Copyright 2018 | Example Corporation</small>
+			 </p>
+        </footer><!--end mainFooter-->
+    </div><!--end siteContainer-->
+	
+<script src="js/main.js"></script>
+</body>
+</html>
