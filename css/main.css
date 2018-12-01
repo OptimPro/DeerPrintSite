@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+<style type="text/css">
+.hovergallery img{
+webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+transform:scale(0.8); /*Mozilla: масштабирование*/
+transition-duration: 0.5s; /*Webkit: длительность анимации*/
+opacity: 0.7; /*Начальная прозрачность изображений*/
+margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+}
+ 
+.hovergallery img:hover{
+webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
+transform:scale(1.1); /*Opera: масштабирование*/
+box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+opacity: 1;
+}
+</style>
+
+ 
+#logo{
+	width: 100%;
+	height: 400px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	font-weight: normal;
+	font-size: 20px;
+	border-bottom: solid 1px #DDD;
+}
+
+
+.menu a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #5757a0;
+  display: block;
+  padding: 60px 60px;
+  background-color: lavender;
+  border-bottom: 5px solid #5757a0;
+}
+
+.menu li {
+  display: block;
+}
+
+#box {
+    background-color: lightgrey;
+
+	color: #5757a0;
+    border: 5px solid  #5757a0;
+    padding: 25px;
+    margin: 25px;
+	float: left;
+	width: 38%;
+  height: 340px;
+}
+
+img
+{ 
+	border: none; 
+	margin: 0; 
+	padding: 0; 
+	width: 31%;
+	border-bottom: solid 1px #DDD;
+}
+
+.top-info {
+  padding: 12px 15px;
+  background-color: #34303f;
+  border-bottom: 2px solid #42a1d8;
+}
+
+.contact-info {
+  text-align: right;
+}
+
+.contact-info_item {
+  display: inline-block;
+  height: 30px;
+  padding: 0 25px;
+  border-right: 1px solid #494553;
+  font-size: 0;
+  vertical-align: center;
+  text-align: left;
+}
+
+.contact-info_item:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  line-height: 100%;
+}
+
+.contact-info_item:firsl-child {
+  padding-left: 0;
+}
+
+.contact-info_item:last-child {
+  padding-right: 0;
+  border: 0;
+}
+
+.contact-info_item .fa,
+.contact-info_content {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact-info_item .fa {
+  margin-right: 12px;
+  font-size: 40px !important;
+  line-height: 0 !important;
+  color: #fff;
+}
+
+.contact-info_content {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#mainHeader
+{
+	right: 5px;
+	margin-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+
+#promo 
+{
+	color: white;
+    line-height: 17px;
+    background: #157fbe;
+    font-weight: bold;
+    position:centre;
+    padding: .8em;
+    border-right: 1px solid #7f8080;
+	font-size: 15px;
+	
+}
+
+#promo a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #5757a0;
+  display: inline-block;
+  padding: 30px 50px;
+  background-color: lavender;
+  border-bottom: 5px solid #5757a0;
+}
+
+#promo li {
+  display: inline;
+}
+
+#productInfo 
+{
+	text-align: center;
+}
+
+.d{
+
+}
+
+#SoI img{
+ position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+transform:scale(0.8); /*Mozilla: масштабирование*/
+transition-duration: 0.5s; /*Webkit: длительность анимации*/
+opacity: 0.7; /*Начальная прозрачность изображений*/
+margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+}
+ 
+.SoI img:hover{
+transform:scale(1.1); /*Opera: масштабирование*/
+box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+opacity: 1;
+}
+
+
+#share-buttons{
+	position: fixed;
+    left: 5px; 
+    bottom: 5%; 
+    padding: 10px; 
+	height: 400px;
+	width: 200px;
+}
+
+.a{
+position: absolute;
+bottom: 200px;
+}
+
+.b{
+position: absolute;
+bottom: 100px;
+}
+
+.c{
+position: absolute;
+bottom: 0px;
+}
+
+#copyRight 
+{
+	margin-right: auto;
+	width: 310px;
+}
+
+/*Page 2 */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*Page 3*/
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
